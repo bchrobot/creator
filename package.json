@@ -1,0 +1,12 @@
+{
+  "name": "creator",
+  "version": "0.9.0",
+  "author": {
+    "name": "Phantomus",
+    "email": "benjamin.blair.chrobot@gmail.com"
+  },
+  "keywords": ["ghost-theme"],
+  "config": {
+    "posts_per_page": 5
+  }
+}
