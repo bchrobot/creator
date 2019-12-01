@@ -12,26 +12,26 @@
   <div class="large-6 medium-6 small-12 columns cr-logo no-sp">
     {{#if @blog.description}}
       {{#if @blog.logo}}
-        <div class="cr-header-logo" style="background-image: url({{@blog.logo}})"></div>
+        <div class="cr-header-logo" style="background-image: url({{@site.logo}})"></div>
         <div class="cr-header-title">
-          {{@blog.title}}
+          {{@site.title}}
         </div>
         <div class="cr-header-desc">
-          {{@blog.description}}
+          {{@site.description}}
         </div>
       {{else}}
         <div class="cr-header-title-nl">
-          {{@blog.title}}
+          {{@site.title}}
         </div>
         <div class="cr-header-desc-nl">
-          {{@blog.description}}
+          {{@site.description}}
         </div>
       {{/if}}
     {{else if @blog.logo}}
-      <div class="cr-default-logo-ntc" style="background-image: url({{@blog.logo}})"></div>
+      <div class="cr-default-logo-ntc" style="background-image: url({{@site.logo}})"></div>
     {{else}}
       <div class="cr-header-title-nl">
-        {{@blog.title}}
+        {{@site.title}}
       </div>
     {{/if}}
   </div>
