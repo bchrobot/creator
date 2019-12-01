@@ -8,31 +8,50 @@
     If the blog title exists, the page will use blog logo and blog title + description. 
     
 }}
-
 <div class="large-12 medium-12 small-12 columns cr-header no-sp">
-    <div class="large-6 medium-6 small-12 columns cr-logo no-sp">
-        {{#if @blog.description}}
-            {{#if @blog.logo}}
-                <div class="cr-header-logo" style="background-image: url({{@blog.logo}})"></div>
-                <div class="cr-header-title">{{@blog.title}}</div>
-                <div class="cr-header-desc">{{@blog.description}}</div>
-            {{else}}
-                <div class="cr-header-title-nl">{{@blog.title}}</div>
-                <div class="cr-header-desc-nl">{{@blog.description}}</div>
-            {{/if}}
-        {{else}}
-            {{#if @blog.logo}}
-                <div class="cr-default-logo-ntc" style="background-image: url({{@blog.logo}})"></div>
-            {{else}}
-                <div class="cr-header-title-nl">{{@blog.title}}</div>
-            {{/if}}
-        {{/if}} 
-    </div>
-    <div class="large-6 medium-6 small-12 columns cr-hmenu no-sp">
-        <ul class="cr-header-nav" style="padding-left: 0px">
-            <li><a href="/portfolio/" class="cr-menu-portfolio">EXPERIENCE</a></li>
-            <li><a href="/blog/" class="cr-menu-blog">BLOG</a></li>
-            <li><a href="/about/" class="cr-menu-static">ABOUT</a></li>
-        </ul>
-    </div>
+  <div class="large-6 medium-6 small-12 columns cr-logo no-sp">
+    {{#if @blog.description}}
+      {{#if @blog.logo}}
+        <div class="cr-header-logo" style="background-image: url({{@blog.logo}})"></div>
+        <div class="cr-header-title">
+          {{@blog.title}}
+        </div>
+        <div class="cr-header-desc">
+          {{@blog.description}}
+        </div>
+      {{else}}
+        <div class="cr-header-title-nl">
+          {{@blog.title}}
+        </div>
+        <div class="cr-header-desc-nl">
+          {{@blog.description}}
+        </div>
+      {{/if}}
+    {{else if @blog.logo}}
+      <div class="cr-default-logo-ntc" style="background-image: url({{@blog.logo}})"></div>
+    {{else}}
+      <div class="cr-header-title-nl">
+        {{@blog.title}}
+      </div>
+    {{/if}}
+  </div>
+  <div class="large-6 medium-6 small-12 columns cr-hmenu no-sp">
+    <ul class="cr-header-nav" style="padding-left: 0px">
+      <li>
+        <a href="/portfolio/" class="cr-menu-portfolio">
+          EXPERIENCE
+        </a>
+      </li>
+      <li>
+        <a href="/blog/" class="cr-menu-blog">
+          BLOG
+        </a>
+      </li>
+      <li>
+        <a href="/about/" class="cr-menu-static">
+          ABOUT
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>

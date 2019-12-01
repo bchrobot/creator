@@ -5,7 +5,9 @@
     "name": "Phantomus",
     "email": "benjamin.blair.chrobot@gmail.com"
   },
-  "keywords": ["ghost-theme"],
+  "keywords": [
+    "ghost-theme"
+  ],
   "config": {
     "posts_per_page": 5
   }
