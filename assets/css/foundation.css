@@ -1686,7 +1686,9 @@ form .row .row.collapse input {
   -moz-border-radius-bottomright: 0;
   -moz-border-radius-topright: 0;
   -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
   -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
 }
 form .row input.column,
 form .row input.columns,
